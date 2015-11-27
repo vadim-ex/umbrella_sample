@@ -18,7 +18,7 @@ defmodule Bar.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger],
+    [applications: [:logger, :mariaex, :ecto],
      mod: {Bar, []}]
   end
 
@@ -36,6 +36,8 @@ defmodule Bar.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      { :ecto, "~> 1.0" }
+    ]
   end
 end

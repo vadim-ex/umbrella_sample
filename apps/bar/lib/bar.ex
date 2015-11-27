@@ -1,14 +1,14 @@
 defmodule Bar do
   use Application
+  alias Bar.Repo
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
   # for more information on OTP Applications
   def start(_type, _args) do
-    import Supervisor.Spec, warn: false
+    import Supervisor.Spec
 
     children = [
-      # Define workers and child supervisors to be supervised
-      # worker(Bar.Worker, [arg1, arg2, arg3]),
+      supervisor(Repo, []),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
