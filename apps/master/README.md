@@ -1,4 +1,4 @@
-# Foo
+# Dependency.Master
 
 **TODO: Add description**
 
@@ -6,15 +6,15 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add foo to your list of dependencies in `mix.exs`:
+  1. Add master to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:foo, "~> 0.0.1"}]
+          [{:master, "~> 0.0.1"}]
         end
 
-  2. Ensure foo is started before your application:
+  2. Ensure master is started before your application:
 
         def application do
-          [applications: [:foo]]
+          [applications: [:master]]
         end
 

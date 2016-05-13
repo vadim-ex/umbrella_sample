@@ -1,6 +1,6 @@
-defmodule FooTest do
+defmodule Dependency.MasterTest do
   use ExUnit.Case
-  doctest Foo
+  doctest Dependency.Master
 
   test "the truth" do
     assert 1 + 1 == 2

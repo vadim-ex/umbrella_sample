@@ -1,6 +1,6 @@
-defmodule BarTest do
+defmodule Dependency.HelperTest do
   use ExUnit.Case
-  doctest Bar
+  doctest Dependency.Helper
 
   test "the truth" do
     assert 1 + 1 == 2
